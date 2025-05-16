@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tardelli Entertainment s | Professional Event Organisers</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Italiana&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Italiana', serif;
+      background-color: #092635;
+      color: #9EC8B9;
+      font-size: 18px;
+    }
+  header.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('public/fire.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+header.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay darkness */
+  z-index: 1;
+  pointer-events: none;
+}
+
+header .overlay {
+  position: relative;
+  z-index: 2;
+  padding: 80px 40px;
+  border-radius: 10px;
+}
+
+    header .overlay {
+    position: relative;
+    z-index: 2;
+    }
+
+    .cta-button {
+      background-color: #5C8374;
+      border: none;
+      padding: 14px 32px;
+      color: #fff;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-style: italic;
+    }
+
+    .cta-button:hover {
+      background-color: #1B4242;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #c4f5e2;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    }
+
+
+    .service-card {
+      background-color: #1B4242;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-style: italic;
+      font-size: 1.6rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+.carousel-wrapper {
+  overflow: hidden;
+}
+.carousel {
+    display: flex;
+    height: 500px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+.carousel::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
+}
+
+
+    .carousel-image {
+      flex: none;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      scroll-snap-align: center;
+    }
+
+    form#contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: #1B4242;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    form#contact-form input,
+    form#contact-form textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    form#contact-form button {
+      background-color: #5C8374;
+      border: none;
+      padding: 15px;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-style: italic;
+    }
+
+    form#contact-form button:hover {
+      background-color: #092635;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .testimonial-card {
+      background-color: #1B4242;
+      padding: 25px;
+      border-radius: 10px;
+      color: #9EC8B9;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      font-style: italic;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-card span {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #5C8374;
+      font-style: normal;
+    }
+
+    .footer {
+      background-color: #092635;
+      color: #9EC8B9;
+      padding: 80px 20px 40px;
+    }
+
+    .footer-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      text-align: left;
+    }
+
+    .footer h4 {
+      color: #5C8374;
+      margin-bottom: 10px;
+    }
+
+    .footer a {
+      color: #9EC8B9;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer p:last-of-type {
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .carousel {
+        height: 300px;
+      }
+      .carousel-image {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="overlay">
+      <h1 style="color: #c4f5e2;">Tardelli Entertainment</h1>
+      <p>From Concept to Celebration – We Bring Events to Life</p>
+      <a href="#contact" class="cta-button">Let's Plan Your Event</a>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>Who We Are</h2>
+        <p style="color: #f3f3f3;">Tardelli Entertainment is a UK-based event company specialising in <em>live music</em>, private parties, and cultural celebrations. We turn your ideas into unforgettable experiences.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="public/record.jpg" alt="Live Music Event" />
+            <h3>Live Music Events</h3>
+            <p>Top DJs and musicians at premier venues for <em>unforgettable nights</em>.</p>
+          </div>
+          <div class="service-card">
+            <img src="public/cheers.jpg" alt="Corporate Event" />
+            <h3>Corporate Events</h3>
+            <p>Product launches, conferences, and ceremonies planned to <em>perfection</em>.</p>
+          </div>
+          <div class="service-card">
+            <img src="public/wedding_table.jpg" alt="Wedding Setup" />
+            <h3>Weddings & Private Parties</h3>
+            <p>Elegantly tailored private events with <em>creative and seamless planning</em>.</p>
+          </div>
+          <div class="service-card">
+            <img src="public/dj2.jpg" alt="Event Production" />
+            <h3>Event Production</h3>
+            <p>Sound, lighting, staging & logistics – full <em>technical production</em>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="carousel-wrapper">
+          <div class="carousel" id="carousel">
+            <img src="public/dj.jpg" alt="Live DJ Set" class="carousel-image" />
+            <img src="public/elita5.jpg" alt="Concert Performance" class="carousel-image" />
+            <img src="public/party.jpg" alt="Dance Floor Celebration" class="carousel-image" />
+            <img src="public/flower_table.jpg" alt="Decorated Table Setup" class="carousel-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>“Tardelli Entertainment s delivered a flawless experience from start to finish. Highly professional!”</p>
+            <span>– Anna M., Corporate Client</span>
+          </div>
+          <div class="testimonial-card">
+            <p>“Our wedding was a dream come true, thanks to the amazing Tardelli Entertainment team.”</p>
+            <span>– Rachel & Tom</span>
+          </div>
+          <div class="testimonial-card">
+            <p>“They transformed our venue and brought the energy – simply the best event crew!”</p>
+            <span>– DJ Leo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+    <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; text-align: left;">
+        <div style="flex: 1 1 500px;">
+        <h2 style="text-align: left;">About Tardelli Entertainment</h2>
+        <p style=" color: #f3f3f3;">Tardelli Entertainment is a full-service event management company based in the UK, founded on a passion for creating memorable and high-impact experiences. We specialize in the planning and execution of live concerts, private celebrations, corporate functions, and cultural events that resonate with style, energy, and authenticity.</p>
+        <br/>
+        <p style=" color: #f3f3f3;">With a team of highly experienced professionals, we bring a creative, hands-on approach to every project, ensuring that each event is tailored to meet the unique vision of our clients. From intimate private gatherings to large-scale concerts featuring top-tier performers, we handle every detail — from artist booking and venue coordination to staging, lighting, sound design, and audience engagement.</p>
+        <br/>
+        <p style=" color: #f3f3f3;"><em>Our mission is simple: to bring ideas to life and turn moments into memories.</em> We are proud to have built a reputation for excellence, innovation, and trust within the events industry.</p>
+        <br/>
+        <p style=" color: #f3f3f3;">At Tardelli Entertainment, we don’t just plan events — we craft unforgettable experiences that leave lasting impressions.</p>
+        </div>
+        <div style="flex: 1 1 400px;">
+        <img src="public/event.jpg" alt="Tardelli Entertainment s Team" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="tel" placeholder="Phone Number" />
+          <textarea placeholder="Tell us about your event..." rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="form-response" style="display:none; color: #5C8374;">Thank you! We'll be in touch soon.</p>
+        </form>
+        <p class="contact-info">
+        Email: <a href="mailto:info@k2kevents.co.uk" style="color: beige; text-decoration: none;">info@k2kevents.co.uk</a> |
+        Phone: <a href="tel:+441234567890" style="color: beige; text-decoration: none;">+44 1234 567890</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"style="background-color: #000000; color: #f3f3f3;">
+    <div class="container" >
+      <div class="footer-columns">
+        <div style=" text-align:  center;">
+          <h4>Tardelli Entertainment</h4>
+          <p><em>Event specialists in music, culture, and celebration.</em></p>
+        </div>
+        <div style="text-align: center;">
+          <h4>Quick Links</h4>
+          <ul style="list-style: none; padding-left: 0; ">
+            <li><a href="#about" style="color: beige;">About</a></li>
+            <li><a href="#services" style="color: beige;">Services</a></li>
+            <li><a href="#contact" style="color: beige; text-align: center;">Contact</a></li>
+          </ul>
+        </div>
+        <div style="text-align: center;" >
+          <h4>Follow Us</h4>
+          <p><em>Instagram | Facebook | TikTok</em></p>
+        </div>
+      </div>
+      <p>&copy; 2025 Tardelli Entertainment s. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </script>
+</body>
+</html>
